@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+body{
+    background: #e2e2e2;
+    width: max-content;
+    margin: 150px auto;
+    text-align: center;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.btn{
+    color: #fff;
+    border: 0;
+    display: inline-block;
+    width: 100%;
+    height: max-content;
+    padding: 10px 25px;
+    background: #0080e5;
+    border-radius: 8px;
+    margin-top: 25px;
+    transition: background .5s linear;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #005ca3;
+}

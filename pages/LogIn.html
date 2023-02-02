@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход | Library</title>
+    <link rel="icon" type="image/x-icon" href="../images/reading-book.png">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/forms.css">
+</head>
+<body>
+    <h1>Авторизация</h1>
+    <form method="post" action="../php/auth.php">
+        <label for="login">Логин:</label><input id="login" type="text" name="login" required placeholder="Введите логин">
+        <label for="password">Пароль:</label><input id="password" type="password" name="password" required placeholder="Введите пароль">
+
+        <input class="btn" type="submit" value="Авторизоваться">
+    </form>
+    <span>Ещё нет аккаунта,<a class="little_btn" href="./Registration.html"> создай</a>!</span>
+    <a class="little_btn" href="../index.html">БлRть, нахуй я сюда пришёл</a>
+</body>
+</html>

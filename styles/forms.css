@@ -1,0 +1,20 @@
+label,input{
+    display: block;
+}
+
+label{
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+input{
+    width: 350px;
+    font-size: 18px;
+}
+span{
+    display: block;
+}
+.little_btn{
+    color: #0080e5;
+}
