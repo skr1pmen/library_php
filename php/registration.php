@@ -1,5 +1,5 @@
 <?php
-$link = new mysqli('localhost', 'root', '', 'library_228');
+$link = new mysqli('localhost', 'root', 'root', 'library_228');
 if (!$link) {
     die('Ошибка соединения: ' . mysqli_error());
 }
