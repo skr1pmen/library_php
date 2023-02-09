@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Фев 02 2023 г., 15:46
+-- Время создания: Фев 09 2023 г., 18:06
 -- Версия сервера: 8.0.19
--- Версия PHP: 7.4.14
+-- Версия PHP: 7.1.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `library_228`
+-- База данных: `library-php`
 --
 
 -- --------------------------------------------------------
@@ -35,9 +35,17 @@ CREATE TABLE `users` (
   `login` varchar(128) NOT NULL,
   `password` varchar(128) DEFAULT NULL,
   `role` varchar(128) DEFAULT NULL,
-  `pass_number` int NOT NULL,
-  `pass_series` int NOT NULL
+  `pass_number` varchar(6) NOT NULL,
+  `pass_series` varchar(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Дамп данных таблицы `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `surname`, `patronymic`, `login`, `password`, `role`, `pass_number`, `pass_series`) VALUES
+(1, 'Сергей', 'Никонов', '', 'skr1pmen', '$2y$10$y1KRBE.vzTSZUn.RdFNlFeA9re9NiDeQq/6.08ZkcLnqYETuHwsyK', NULL, '416309', '405'),
+(2, '', '', '', '', '$2y$10$2mc4QX7yimKS9c9ZW/FdgeSdWcEG0Ey9ncVl/a3z4Xgtl1A/Udqrm', NULL, '', '');
 
 --
 -- Индексы сохранённых таблиц
@@ -57,7 +65,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
